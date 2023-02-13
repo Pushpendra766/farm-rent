@@ -1,17 +1,14 @@
-import { useState } from "react";
 import "./App.css";
 import "./styles/styles.css";
 
-import CategorySection from './Components/CategorySection/index'
+import CategorySection from "./Components/CategorySection/CategorySection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <CategorySection/>
-      <CategorySection/>
-      <CategorySection/>
+      <CategorySection />
+      <CategorySection />
+      <CategorySection />
     </div>
   );
 }

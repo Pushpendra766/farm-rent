@@ -1,6 +1,6 @@
 import React from "react";
 
-import Category from "../Category/index";
+import Category from "../Category/Category";
 
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
