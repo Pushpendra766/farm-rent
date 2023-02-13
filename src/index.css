@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+button {
+  @apply bg-gradient-to-r from-[#FF512F] to-[#F09819] px-4 rounded-full pb-1 font-semibold;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -68,6 +72,7 @@ button:focus-visible {
   }
 }
 
+*/
 ::-webkit-scrollbar {
   width: 10px;
   cursor: pointer;
@@ -75,7 +80,7 @@ button:focus-visible {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #82cd47;
+  background: #0BAB64;
   cursor: pointer;
   border-radius: 10px;
-}
+} 

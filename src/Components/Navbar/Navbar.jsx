@@ -5,17 +5,28 @@ import { BsFillHeartFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row gap-8 bg-[#54B435] text-[#ffffff] px-20 py-4">
-      <span className="text-xl font-bold tracking-wide cursor-pointer">Farm Rent</span>
-      <div className="flex flex-row gap-2 cursor-pointer">
-        <span className="pt-1 align-middle">
-          <BsFillHeartFill />
-        </span>{" "}
-        <span>Wishlist</span>
+    <div className="bg-gradient-to-r from-[#0BAB64] to-[#3BB78F]">
+      <div className="flex flex-row gap-4 lg:gap-8  text-[#ffffff] px-4 pr-8 md:px-10 lg:px-20  py-4">
+        <div className="text-2xl font-bold tracking-wide cursor-pointer whitespace-nowrap">
+          Farm <span className="text-[#F0FF42]">Rent</span>
+        </div>
+        <div className="md:hidden w-full"></div>
+        <div className="flex flex-row gap-2 cursor-pointer">
+          <span className="pt-1 align-middle">
+            <BsFillHeartFill />
+          </span>{" "}
+          <span className="hidden lg:flex">Wishlist</span>
+        </div>
+        <SearchBar additionalClass="hidden md:flex" />
+        <Language />
+        <span className="flex flex-row gap-4 hidden md:flex">
+          <button className="">Login</button>
+          <button className="whitespace-nowrap">Sign Up</button>
+        </span>
       </div>
-      <SearchBar />
-      <Language />
-      <span>login/signup</span>
+      <div className="pb-2 mx-4">
+        <SearchBar additionalClass="md:hidden" />
+      </div>
     </div>
   );
 };
