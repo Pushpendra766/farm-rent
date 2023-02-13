@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
   background-color: white;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -73,10 +73,9 @@ button:focus-visible {
   cursor: pointer;
 }
 
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #82CD47; 
+  background: #82cd47;
   cursor: pointer;
   border-radius: 10px;
 }
