@@ -1,15 +1,14 @@
-import { useState } from "react";
 import "./App.css";
 import "./styles/styles.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+import CategorySection from "./Components/CategorySection/CategorySection";
 
+function App() {
   return (
     <div className="App">
-      <p className="btn-primary" onClick={() => setCount(count + 1)}>
-        Count : {count}
-      </p>
+      <CategorySection />
+      <CategorySection />
+      <CategorySection />
     </div>
   );
 }
