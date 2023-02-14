@@ -5,13 +5,13 @@ import { BsFillHeartFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className="bg-gradient-to-r from-[#0BAB64] to-[#3BB78F]">
+    <div className="bg-gradient-to-r from-[#0BAB64] to-[#3BB78F] items-center">
       <div className="flex flex-row gap-4 lg:gap-8  text-[#ffffff] px-4 pr-8 md:px-10 lg:px-20  py-4">
         <div className="text-xl md:text-2xl font-bold tracking-wide cursor-pointer whitespace-nowrap">
           Farm <span className="text-[#F0FF42]">Rent</span>
         </div>
         <div className="md:hidden w-full"></div>
-        <div className="flex flex-row gap-2 cursor-pointer">
+        <div className="flex flex-row gap-2 cursor-pointer mt-2">
           <span className="pt-1 align-middle">
             <BsFillHeartFill />
           </span>{" "}

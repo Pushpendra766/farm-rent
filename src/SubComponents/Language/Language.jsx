@@ -12,13 +12,13 @@ const Language = () => {
   };
   return (
     <div
-      className="flex flex-row gap-2 cursor-pointer"
+      className="flex flex-row gap-2 cursor-pointer items-center"
       onClick={() => toggleLanguage()}
     >
       <span className="pt-1 align-middle">
         <MdLanguage size={20} />
       </span>{" "}
-      <span className="hidden lg:flex">{currentLang}</span>
+      <span className="hidden lg:flex pt-1">{currentLang}</span>
     </div>
   );
 };

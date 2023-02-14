@@ -1,11 +1,11 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
-const SearchBar = ({additionalClass}) => {
+const SearchBar = ({ additionalClass }) => {
   return (
-    <div className={`w-full mx-auto flex flex-row ${additionalClass}`}>
+    <div className={`w-full mx-auto mt-1 flex flex-row ${additionalClass}`}>
       <input
-        className="rounded-md w-full px-2 py-1 text-[#000000]"
+        className="rounded-md w-full px-2 py-1 text-[#000000] outline-0"
         type="text"
         placeholder="Search for equipments or tools"
       />

@@ -8,7 +8,7 @@ const CategorySection = () => {
   const userRef = React.useRef(null);
   return (
     <div
-      className="flex relative align-middle m-2 py-1 h-64 rounded-xl border-lightest-grey border-1 shadow-xl my-10"
+      className="flex relative align-middle m-2 py-1 h-64 rounded-xl border-lightest-grey border-1 shadow-xl my-6"
       style={{ width: "98vw" }}
     >
       <div className="w-4/12 flex flex-col items-center p-1 rounded-md mx-1">
