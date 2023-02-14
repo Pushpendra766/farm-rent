@@ -6,6 +6,7 @@ import CategoryScreen from "./Screens/Category/CategoryScreen";
 
 import Home from "./Screens/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/category/:category" element={<CategoryScreen />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
