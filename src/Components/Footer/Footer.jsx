@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <button className=" justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">Contact US</button>
+          <button className="text-yellow justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">Contact US</button>
         </div>
 
         <hr className="my-3 border-gray" />
