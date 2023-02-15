@@ -16,7 +16,7 @@ module.exports = {
       "light-green": "#82CD47",
       "dark-green": "#379237",
       orange: "#F49D1A",
-      white:"#ffffff",
+      white: "#ffffff",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -27,6 +27,12 @@ module.exports = {
       4: "4px",
       6: "6px",
       8: "8px",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      mobile: "350px",
     },
     extend: {},
   },
