@@ -1,5 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import { MdMic } from "react-icons/md";
 
 const SearchBar = ({ additionalClass }) => {
   return (
@@ -11,6 +12,9 @@ const SearchBar = ({ additionalClass }) => {
       />
       <span className="pt-2 cursor-pointer">
         <BsSearch className="relative right-6 text-primary" />
+      </span>
+      <span className="pt-1 cursor-pointer text-[#ffffff]">
+        <MdMic size={25} />
       </span>
     </div>
   );
