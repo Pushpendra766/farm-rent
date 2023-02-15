@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router";
 
-const Category = () => {
+const Category = ({ mobile }) => {
   const location = useLocation();
   const ref = useRef();
 
@@ -14,14 +14,22 @@ const Category = () => {
     }
   }, [location]);
 
+  const { innerWidth } = window;
+
   return (
     <div
       ref={ref}
-      className=" self-center w-2/12 my-3 rounded-md border-1 py-2 border-lightest-grey mx-2.5 cursor-pointer transition-all hover:scale-105 shrink-0"
+      style={
+        mobile === true && innerWidth < 700
+          ? { width: "31%", margin: "0 0.25rem" }
+          : {}
+      }
+      className="items-center flex flex-col self-center w-2/12 md:my-2 mobile:my-1 rounded-md border-1 py-2 border-lightest-grey md:mx-2 cursor-pointer transition-all hover:scale-105 shrink-0 mobile:mx-auto"
     >
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8xB9u3Fg0HvPxY23zCzu0P5dL_g-DUtxeA&usqp=CAU"
         alt=""
+        className="mobile:w-full"
       />
       <div className="flex flex-col items-center">
         <h3 className="text-xl">Tractor</h3>
@@ -29,10 +37,15 @@ const Category = () => {
           Rs. 499 <span className="line-through text-orange">899</span>
         </p>
         <p className="text-sm text-center px-2">
-          {"A tractor is a vehicle that's used on a farm or work site, often to pull a trailer or other equipment.".slice(
-            0,
-            50
-          ) + "..."}
+          {mobile === true && innerWidth < 700
+            ? "A tractor is a vehicle that's used on a farm or work site, often to pull a trailer or other equipment.".slice(
+                0,
+                25
+              ) + "..."
+            : "A tractor is a vehicle that's used on a farm or work site, often to pull a trailer or other equipment.".slice(
+                0,
+                50
+              ) + "..."}
         </p>
       </div>
     </div>
