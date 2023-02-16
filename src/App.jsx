@@ -9,6 +9,9 @@ import Product from "./Screens/Product/Product";
 import Intro from "./Components/Intro/Intro";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 
+import Testimonials from "./Sections/Testimonials/Testimonials";
+import Faq from "./Sections/Faq/Faq";
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,8 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
       <Intro />
+      <Testimonials />
+      <Faq />
       <Footer />
     </div>
   );

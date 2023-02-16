@@ -3,7 +3,7 @@ import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 
 const Faq = () => {
   return (
-    <div>
+    <div className="mobile:my-8 md:my-0">
       <p className="font-semibold text-2xl text-center">FAQs</p>
       <Component />
       <Component />
@@ -19,7 +19,7 @@ const Component = () => {
       onClick={() => {
         setOpened(!opened);
       }}
-      className="my-3 border-1 w-4/12 mx-auto border-gray rounded-sm cursor-auto"
+      className="my-3 border-1 md:w-4/12 mobile:w-9/12 mx-auto border-gray rounded-sm cursor-auto"
     >
       <div
         className="flex items-center justify-between py-2 px-3"

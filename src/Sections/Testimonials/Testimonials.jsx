@@ -2,9 +2,9 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="my-6">
+    <div className="md:my-6 mobile:mb-8 mobile:mt-4">
       <p className="text-center text-2xl font-semibold">Testimonials</p>
-      <div className="flex mx-auto w-10/12 my-8 items-center justify-evenly">
+      <div className="md:flex mx-auto w-10/12 my-7 items-center justify-evenly">
         <Component />
         <Component scale={true} />
         <Component />
@@ -18,8 +18,8 @@ const Component = ({ scale }) => {
     <div
       className={
         scale === true
-          ? "mx-1 w-3/12 rounded-3xl shadow-2xl my-5 scale-125"
-          : "mx-1 w-3/12 rounded-3xl shadow-2xl my-5"
+          ? "mx-1 mobile:w-11/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5 scale-125"
+          : "mx-1 mobile:w-11/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5"
       }
       style={{ backgroundColor: "#f2f2f2" }}
     >
