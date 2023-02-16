@@ -21,7 +21,7 @@ const Category = ({ mobile }) => {
       ref={ref}
       style={
         mobile === true && innerWidth < 700
-          ? { width: "31%", margin: "0 0.25rem" }
+          ? { width: "31%", margin: " 0 0.35rem" }
           : {}
       }
       className="items-center flex flex-col self-center w-2/12 md:my-2 mobile:my-1 rounded-md border-1 py-2 border-lightest-grey md:mx-2 cursor-pointer transition-all hover:scale-105 shrink-0 mobile:mx-auto"
