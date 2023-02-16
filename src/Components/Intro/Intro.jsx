@@ -7,8 +7,9 @@ const Intro = () => {
       <div className="mx-8 md:mx-20 pt-10 text-center flex flex-col md:gap-5 mobile:gap-2 bg-blue-200 z-40">
         <p className="text-3xl md:text-5xl font-bold mx-auto md:w-5/12 mobile:w-11/12">
           Helping Farmers,
+          <br/>
           <Typewriter
-            words={[" Empowering Nation", " Saving money"]}
+            words={[" Empowering Nation", " Saving Money"]}
             loop={false}
             cursor
             cursorStyle="_"
