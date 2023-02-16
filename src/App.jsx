@@ -6,16 +6,19 @@ import Home from "./Screens/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Product from "./Screens/Product/Product";
+import Intro from "./Components/Intro/Intro";
+import HowItWorks from "./Components/HowItWorks/HowItWorks";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:category" element={<CategoryScreen />} />
         <Route path="/product/:id" element={<Product />} />
-      </Routes>
+      </Routes> */}
+      <Intro />
       <Footer />
     </div>
   );
