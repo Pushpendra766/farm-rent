@@ -18,8 +18,8 @@ const Component = ({ scale }) => {
     <div
       className={
         scale === true
-          ? "mx-1 mobile:w-11/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5 scale-125"
-          : "mx-1 mobile:w-11/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5"
+          ? "mx-1 mobile:w-10/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5 scale-125"
+          : "mx-1 mobile:w-10/12 mobile:mx-auto md:w-3/12 rounded-3xl shadow-2xl my-5"
       }
       style={{ backgroundColor: "#f2f2f2" }}
     >
