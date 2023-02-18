@@ -17,11 +17,11 @@ const Footer = () => {
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
-              <button className="bg-lightest-grey text-lightest-grey shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <AiFillTwitterCircle style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" /></button><button className="bg-lightest-grey text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                <AiFillInstagram  style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" /></button><button className="bg-lightest-grey text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <button className="bg-lightest-grey text-lightest-grey hover:bg-mid shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <AiFillTwitterCircle style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" /></button><button className="bg-lightest-grey hover:bg-mid  text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <AiFillInstagram  style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" /></button><button className="bg-lightest-grey  hover:bg-mid  text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                 <AiFillLinkedin  style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" /></button>
-              <button className="bg-lightest-grey text-green shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <button className="bg-lightest-grey hover:bg-mid  text-green shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                 <AiFillGithub style={{marginLeft:"-11px",marginTop:"4px"}} size={30} color="green" />
               </button>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <button className=" justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">Contact US</button>
+          <button className="text-yellow justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">Contact US</button>
         </div>
 
         <hr className="my-3 border-gray" />
