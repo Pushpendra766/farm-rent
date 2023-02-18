@@ -22,6 +22,7 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
       <Intro />
+      <HowItWorks/>
       <Testimonials />
       <Faq />
       <Footer />
