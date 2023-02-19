@@ -21,7 +21,7 @@ function App() {
         <Route path="/category/:category" element={<CategoryScreen />} />
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
-       <Itemsbar/>
+       {/* <Itemsbar/> */}
       <Intro />
       <Trending/>
       <HowItWorks/>

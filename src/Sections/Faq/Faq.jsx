@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { Transition } from "@headlessui/react";
 
 const Faq = () => {
   const faqs = [
@@ -55,21 +56,41 @@ const Faq = () => {
 
 const Component = ({ faq }) => {
   const [opened, setOpened] = useState(false);
+  const [animationClass, setAnimationClass] = useState("opacity-0");
+  useEffect(() => {
+    if (opened) {
+      setTimeout(() => {
+        setAnimationClass("opacity-100 transform transition-all duration-500 ");
+      }, 0);
+    } else {
+      setAnimationClass("opacity-0");
+    }
+  }, [opened]);
   return (
-    <div
-      onClick={() => {
-        setOpened(!opened);
-      }}
-      className="my-3 border-1 md:w-8/12 lg:w-6/12 w-9/12 mx-auto border-gray rounded-sm cursor-[url(wheat.cur),_pointer]"
-    >
+    <div className="my-3 border-0 md:w-8/12 lg:w-6/12 w-9/12 mx-auto border-gray bg-gradient-to-r from-[#63A4FF] to-[#83EAF1] rounded-md cursor-pointer">
       <div
-        className="flex items-center justify-between py-2 px-3 font-semibold"
-        style={opened ? { backgroundColor: "#f9f9f9" } : {}}
+        onClick={() => {
+          setOpened(!opened);
+        }}
+        className={`flex items-center justify-between py-2 px-3 font-semibold`}
       >
         <p>{faq.question}</p>
         {opened ? <AiOutlineUp /> : <AiOutlineDown />}
       </div>
-      {opened ? <p className="px-2 py-1">{faq.answer}</p> : null}
+      <Transition
+        show={opened}
+        enter="transition ease-out duration-500 transform"
+        enterFrom="opacity-0 translate-y-2"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-500 transform"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-2"
+      >
+        <div className="p-4 mt-2 bg-[#ffffff] rounded-b-md drop-shadow-lg">
+          <p>{faq.answer}</p>
+        </div>
+      </Transition>
+      {/* {opened ? <p className="px-2 py-1">{faq.answer}</p> : null} */}
     </div>
   );
 };
