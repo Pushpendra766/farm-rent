@@ -48,7 +48,7 @@ const Faq = () => {
     <div className="mobile:my-8 md:my-0">
       <p className="font-semibold text-2xl text-center">FAQs</p>
       {faqs.map((faq) => {
-        return <Component faq={faq} />;
+        return <Component faq={faq} key={faq.question}/>;
       })}
     </div>
   );

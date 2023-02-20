@@ -12,8 +12,12 @@ import Testimonials from "./Sections/Testimonials/Testimonials";
 import Faq from "./Sections/Faq/Faq";
 import Trending from "./Sections/Trending/Trending";
 import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    console.log("Website loaded....");
+  }, []);
   return (
     <div className="App">
       <Navbar />
