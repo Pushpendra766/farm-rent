@@ -28,9 +28,8 @@ function App() {
       </Routes> */}
       {/* <Itemsbar/> */}
       <Intro />
-      {/* <TractorAnimation /> */}
-      <Trending />
-      <HowItWorks />
+      <HowItWorks/>
+      <Trending/>
       <Testimonials />
       <Faq />
       <Footer />

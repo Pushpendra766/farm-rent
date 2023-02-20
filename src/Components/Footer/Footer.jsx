@@ -138,6 +138,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
           <button className="text-[#ffffff] justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">
             Contact US
           </button>
