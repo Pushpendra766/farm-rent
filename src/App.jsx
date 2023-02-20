@@ -24,6 +24,7 @@ function App() {
        <Itemsbar/>
       <Intro />
       <Trending/>
+      <HowItWorks/>
       <Testimonials />
       <Faq />
       <Footer />

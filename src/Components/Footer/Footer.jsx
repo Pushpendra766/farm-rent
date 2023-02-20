@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div style={{transform:"translateY(12px)"}}
               className="text-white text-md  font-bold py-0.2">
-              Copyright © <span id="get-current-year">2023</span><a href="" className="text-secondary hover:text-yellow" > Farm-Rent </a>
+              Copyright © <span id="get-current-year">2023</span><a href="" className="text-[#00ffff] hover:text-[#ffff00]" > Farm-Rent </a>
             by <span className="text-orange">Code Casters </span>  
             </div>
           </div>

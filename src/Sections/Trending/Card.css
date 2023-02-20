@@ -4,25 +4,17 @@
 
 
 @layer components{
-
- .content {
-   @apply  flex justify-center items-center relative;
-   box-shadow: rgb(31, 29, 29);
- }
  
  .card {
-   @apply w-full   h-[300px] bg-[#292929] shadow-[0px_2px_10px_rgba(0,0,0,0.24)] text-base transition-all duration-[0.3s] ease-[ease] relative flex justify-center items-center flex-col cursor-pointer transition-all duration-[0.3s] ease-[ease]  my-0 rounded-[10px] shadow-lg  hover:h-[300px];
-   background-color: rgb(255, 251, 251);
-  }
- .icon {
-   @apply w-full h-20 max-w-[80px] flex justify-center items-center text-[white] transition-all duration-[0.8s] ease-[ease] bg-[0px] bg-[200px] mx-auto my-0 rounded-[100%];
+   @apply w-full h-[330px] bg-[#292929]  text-base transition-all duration-[0.3s] ease-[ease] relative flex justify-center items-center flex-col cursor-pointer transition-all duration-[0.3s] ease-[ease]  my-3 rounded-[25px] shadow-lg  hover:h-[330px];
    background: linear-gradient(
      90deg,
      #ff7e7e 0%,
      #ff4848 40%,
-     rgba(0, 0, 0, 0.28) 60%
+     rgba(6, 235, 124, 0.28) 60%
    );
- }
+   overflow: hidden;
+  }
  
  .card .title {
    @apply w-full text-center text-[black] font-semibold uppercase tracking-[4px] mt-[30px] m-0;
@@ -30,14 +22,9 @@
  .card .text {
    @apply w-4/5 text-[13px] text-center text-[blue] font-extralight tracking-[2px] opacity-0 max-h-0 transition-all duration-[0.3s] ease-[ease] mt-5 mx-auto my-0;
  }
- .card:hover .info {
-   @apply h-[90%];
- }
+ 
  .card:hover .text {
    @apply transition-all duration-[0.3s] ease-[ease] opacity-100 max-h-10;
- }
- .card:hover .icon {
-   @apply bg-[-120px] transition-all duration-[0.3s] ease-[ease];
  }
  .card img{
   margin-top:-30px;
@@ -46,10 +33,4 @@
  min-width: 270px;
  border-radius: 15px;
 }
- .card:hover .icon i {
-   @apply opacity-100 transition-all duration-[0.3s] ease-[ease];
-   background: linear-gradient(90deg, #ff7e7e, #ff4848);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
 }
