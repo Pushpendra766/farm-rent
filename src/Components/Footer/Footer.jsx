@@ -138,18 +138,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <button className="text-yellow justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">Contact US</button>
-        </div>
 
-        <hr className="my-3 border-gray" />
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
-          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div style={{transform:"translateY(12px)"}}
-              className="text-white text-md  font-bold py-0.2">
-              Copyright © <span id="get-current-year">2023</span><a href="" className="text-[#00ffff] hover:text-[#ffff00]" > Farm-Rent </a>
-            by <span className="text-orange">Code Casters </span>  
-            </div>
-          </div>
           <button className="text-[#ffffff] justify-center text-center rounded-lg-shadow px-10 py-3 flex items-center">
             Contact US
           </button>
