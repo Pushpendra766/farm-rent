@@ -11,7 +11,6 @@ import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import Testimonials from "./Sections/Testimonials/Testimonials";
 import Faq from "./Sections/Faq/Faq";
 import Trending from "./Sections/Trending/Trending";
-import SeasonDisk from "./Components/SeasonDisk/SeasonDisk";
 import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
 
 function App() {
