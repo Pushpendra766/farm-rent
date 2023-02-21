@@ -2,21 +2,38 @@ import React from "react";
 
 const HowItWorks = () => {
   return (
-    <div className="py-10">
-      <h1 className="text-5xl font-bold text-center">How It Works</h1>
-      <div className="flex flex-row justify-around py-10">
-        <div className="text-center">
-          <h2 className="text-xl font-semibold">
-            1. Visit Farm.Rent and book/add your farming tool.
+    <div className="py-10 px-40">
+      <h1 className="text-4xl font-bold text-center">How It Works</h1>
+      <div className="grid grid-cols-3 pt-10 gap-20 text-center justify-items-center">
+        <div className="">
+          <img src="images/browse.png" width={300} />
+          <h2 className="text-xl font-semibold pt-10">
+            1. Browse and Choose tools :
           </h2>
-          <p className="w-6/12 text-lg mx-auto">
-            List your equipment on the website if you want to give you tools on
-            rent. Book equipment from existing equipment present on the website.
+          <p className="text-lg">
+            Browse our selection of farming tools, equipment, and machinery on
+            our website or in-person and select the ones that you need for your
+            farm.
           </p>
         </div>
-        {/* <div className="mr-0">
-          <img src="images/farmer.jpg" className="w-2/12 mr-0" />
-        </div> */}
+        <div>
+          <img src="images/rent.png" width={300}/>
+          <h2 className="text-xl font-semibold pt-10">2. Rent tools : </h2>
+          <p className="text-lg">
+            Reserve the tools you need online or by calling our customer service
+            team. We offer flexible rental options, including daily, weekly, and
+            monthly rates.
+          </p>
+        </div>
+        <div>
+          <img src="images/return.png" width={300}/>
+          <h2 className="text-xl font-semibold pt-10">3. Use and return :</h2>
+          <p className="text-lg">
+            Pick up the tools from our rental location or have them delivered to
+            your farm. Use the tools as needed, and when you're finished, return
+            them to our rental location.
+          </p>
+        </div>
       </div>
     </div>
   );
