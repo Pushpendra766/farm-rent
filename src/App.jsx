@@ -12,6 +12,7 @@ import Testimonials from "./Sections/Testimonials/Testimonials";
 import Faq from "./Sections/Faq/Faq";
 import Trending from "./Sections/Trending/Trending";
 import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
+import Features from "./Components/Features/Features";
 import { useEffect } from "react";
 
 function App() {
@@ -27,12 +28,19 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
       {/* <Itemsbar/> */}
-      <Intro />
+      <Routes>
+      <Route exact path="/" element={<>
+       <Intro />
       <HowItWorks/>
       <Trending/>
       <Testimonials />
       <Faq />
       <Footer />
+      </>}/>
+        <Route path="/features" element={<><Features/></>} />
+      </Routes>
+      
+      
     </div>
   );
 }
