@@ -13,34 +13,41 @@ import Faq from "./Sections/Faq/Faq";
 import Trending from "./Sections/Trending/Trending";
 import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
 import Features from "./Components/Features/Features";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
-    console.log("Website loaded....");
+    // Simulate loading delay
+    setTimeout(() => {
+      setIsLoading(false);
+      setBgColor("bg-[#ffffff]");
+    }, 6000);
   }, []);
+  const [bgColor, setBgColor] = useState("bg-[#ffffff]");
   return (
-    <div className="App">
-      <Navbar />
-      {/* <Routes>
+    <div className={`App ${bgColor}`}>
+      {isLoading ? (
+        <LoadingAnimation setBgColor={setBgColor} />
+      ) : (
+        <>
+          <Navbar />
+          {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:category" element={<CategoryScreen />} />
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
-      {/* <Itemsbar/> */}
-      <Routes>
-      <Route exact path="/" element={<>
-       <Intro />
-      <HowItWorks/>
-      <Trending/>
-      <Testimonials />
-      <Faq />
-      <Footer />
-      </>}/>
-        <Route path="/features" element={<><Features/></>} />
-      </Routes>
-      
-      
+          {/* <Itemsbar/> */}
+          <Intro />
+          <Trending />
+          <HowItWorks />
+          <Testimonials />
+          <Faq />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
