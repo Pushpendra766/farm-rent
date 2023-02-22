@@ -12,6 +12,7 @@ import Testimonials from "./Sections/Testimonials/Testimonials";
 import Faq from "./Sections/Faq/Faq";
 import Trending from "./Sections/Trending/Trending";
 import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
+import Features from "./Components/Features/Features";
 import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
 
