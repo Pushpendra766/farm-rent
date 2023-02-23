@@ -30,30 +30,40 @@ function App() {
   const [bgColor, setBgColor] = useState("bg-[#ffffff]");
   return (
     <div className={`App ${bgColor}`}>
-      {isLoading ? (
-        <LoadingAnimation setBgColor={setBgColor} />
-      ) : (
-        <>
-          <Navbar />
-          {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:category" element={<CategoryScreen />} />
-        <Route path="/product/:id" element={<Product />} />
-      </Routes> */}
-          {/* <Itemsbar/> */}
-          <Routes>
-        <Route path="/" element={<>
-        <Intro />
-          <Trending />
-          <HowItWorks />
-          <Testimonials />
-          <Faq />
-          <Footer /></>} />
-        <Route path="/features" element={<Features />} />
+      <>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {isLoading ? (
+                  <LoadingAnimation setBgColor={setBgColor} />
+                ) : (
+                  <>
+                    <Navbar />
+                    <Intro />
+                    <Trending />
+                    <HowItWorks />
+                    <Testimonials />
+                    <Faq />
+                    <Footer />
+                  </>
+                )}
+              </>
+            }
+          />
+          <Route
+            path="/features"
+            element={
+              <>
+                <Navbar />
+                <Features />
+              </>
+            }
+          />
         </Routes>
-          <ChatbotButton />
-        </>
-      )}
+        <ChatbotButton />
+      </>
     </div>
   );
 }
