@@ -47,6 +47,7 @@ function App() {
                     <Testimonials />
                     <Faq />
                     <Footer />
+                    <ChatbotButton />
                   </>
                 )}
               </>
@@ -58,11 +59,12 @@ function App() {
               <>
                 <Navbar />
                 <Features />
+                <Footer />
+                <ChatbotButton />
               </>
             }
           />
         </Routes>
-        <ChatbotButton />
       </>
     </div>
   );
