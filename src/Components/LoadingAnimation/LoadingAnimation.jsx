@@ -7,7 +7,6 @@ const LoadingAnimation = ({ setBgColor }) => {
     <div className="w-80 mx-auto flex h-screen items-center">
       <div className="flex flex-col">
         <Lottie animationData={plantGrowing} loop={true} />
-        <p className="text-center pt-10">Loading...</p>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
 @layer components{
  
  .card {
-   @apply w-full h-[330px] bg-gradient-to-r from-[#63A4FF] to-[#83EAF1] text-base transition-all duration-[0.3s] ease-[ease] relative flex justify-center items-center flex-col cursor-pointer transition-all duration-[0.3s] ease-[ease]  my-3 rounded-[25px] shadow-lg  hover:h-[330px];
+   @apply w-full h-[330px] bg-gradient-to-b from-[#83EAF1] to-[#ffffff] text-base transition-all duration-[0.3s] ease-[ease] relative flex justify-center items-center flex-col cursor-pointer transition-all duration-[0.3s] ease-[ease]  my-3 rounded-[25px] shadow-lg  hover:h-[330px];
    
    overflow: hidden;
   }

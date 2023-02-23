@@ -10,7 +10,7 @@ const Navbar = () => {
     <div  style={{position:"fixed",
     width:"100vw",
     zIndex:999,
-    }} className="bg-gradient-to-r from-[#0BAB64] to-[#3BB78F] items-center">
+    }} className="bg-gradient-to-r from-[#0BAB64] to-[#3BB78F] items-center sticky">
       <div className="flex flex-row gap-4 lg:gap-8  text-[#ffffff] px-4 pr-8 md:px-10 lg:px-20  py-4">
         <div
           className="text-xl md:text-2xl font-bold tracking-wide cursor-pointer whitespace-nowrap"
