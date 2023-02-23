@@ -25,7 +25,7 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
       setBgColor("bg-[#ffffff]");
-    }, 6000);
+    }, 3000);
   }, []);
   const [bgColor, setBgColor] = useState("bg-[#ffffff]");
   return (
@@ -41,12 +41,16 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
       </Routes> */}
           {/* <Itemsbar/> */}
-          <Intro />
+          <Routes>
+        <Route path="/" element={<>
+        <Intro />
           <Trending />
           <HowItWorks />
           <Testimonials />
           <Faq />
-          <Footer />
+          <Footer /></>} />
+        <Route path="/features" element={<Features />} />
+        </Routes>
           <ChatbotButton />
         </>
       )}
