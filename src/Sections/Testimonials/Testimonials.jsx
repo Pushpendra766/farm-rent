@@ -2,47 +2,68 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
 const Testimonials = () => {
+  const reviews = [
+    {
+      image: "farmeri1.png",
+      name: "Dhirendra Kumar",
+      text: "I rented a chipper shredder from this rental service and it worked like a charm! The machine was well-maintained and in great condition. The staff was very helpful and walked me through the operating instructions step-by-step. Highly recommend this rental service to anyone in need of quality equipment.",
+      rating: 5,
+    },
+    {
+      image: "farmeri2.png",
+      name: "Ravi Patel",
+      text: "I rented a mini-excavator from this rental service and it was the perfect tool for the job. The equipment was in excellent condition, and the staff was very helpful and friendly. I was able to complete my project quickly and efficiently, thanks to the high-quality equipment provided by this rental service.",
+      rating: 4.5,
+    },
+    {
+      image: "farmeri3.png",
+      name: "Vishvas Singh",
+      text: "I had a great experience with this rental service. I rented a trencher and was impressed with how easy it was to use. The machine was clean, well-maintained, and in great condition. The staff was very knowledgeable and took the time to answer all of my questions. I would definitely recommend this service to anyone in need of quality equipment.",
+      rating: 3,
+    },
+    {
+      image: "farmeri4.png",
+      name: "Kishan Chand",
+      text: "I rented a mini-excavator from this rental service and it was the perfect tool for the job. The equipment was in excellent condition, and the staff was very helpful and friendly. I was able to complete my project quickly and efficiently, thanks to the high-quality equipment provided by this rental service.",
+      rating: 4.5,
+    },
+  ];
   return (
-    <div className="md:my-6 mobile:mb-8 mobile:mt-4">
-      <p className="text-center text-2xl font-semibold">
-        {"Testimonials".toUpperCase()}
-      </p>
+    <div className="md:my-6 mobile:mb-8 mobile:mt-4 bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] py-10">
+      <p className="text-center text-3xl font-bold pb-8">Testimonials</p>
       <div className="md:flex h-[60vh] mx-auto mt-16 w-10/12 items-center justify-evenly">
-        <Component />
-        <Component />
-        <Component />
-        <Component />
+        {reviews.map((review) => {
+          return <Component review={review} />;
+        })}
       </div>
     </div>
   );
 };
 
-const Component = () => {
+const Component = ({ review }) => {
   const boxRef = React.useRef(null);
-  useEffect(() => {
-    gsap
-      .timeline({ repeat: -1, defaults: { duration: 2 } })
-      .from(boxRef.current, { x: -25 })
-      .to(boxRef.current, { x: 25 })
-      .to(boxRef.current, { x: -25 });
-  }, []);
+  // useEffect(() => {
+  //   gsap
+  //     .timeline({ repeat: -1, defaults: { duration: 2 } })
+  //     .from(boxRef.current, { x: -25 })
+  //     .to(boxRef.current, { x: 25 })
+  //     .to(boxRef.current, { x: -25 });
+  // }, []);
   return (
     <div
       ref={boxRef}
       className="mx-4 rounded-xl px-3 py-4"
-      style={{ backgroundColor: "#f2f2f2" }}
+      style={{ backgroundColor: "#ffffff" }}
     >
       <img
         className="rounded-full mx-auto w-8/12 -mt-20"
-        src="https://square-vn.com/app/dscms/assets/images/person-1.jpg?v=1653932875"
+        src={`/images/${review.image}`}
         alt=""
       />
-      <p className="text-center font-semibold mt-1 text-lg">Kayla Rose</p>
-      <p className="px-2 text-center">
-        A farm rent app helps farmers and landowners manage rent payments and
-        leases through an easy-to-use interface that tracks payments, monitors
-        lease agreements, and provides payment reminders.
+      <p className="text-center font-semibold mt-1 text-lg pt-2 pb-4">
+        {review.name}
       </p>
+      <p className="px-2 text-center">{review.text}</p>
     </div>
   );
 };

@@ -45,8 +45,8 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="mobile:my-8 md:my-0">
-      <p className="font-semibold text-2xl text-center">FAQs</p>
+    <div className="mobile:my-8 md:my-0 py-10">
+      <p className="font-bold text-3xl text-center pb-8">FAQs</p>
       {faqs.map((faq) => {
         return <Component faq={faq} key={faq.question}/>;
       })}
@@ -67,7 +67,7 @@ const Component = ({ faq }) => {
     }
   }, [opened]);
   return (
-    <div className="my-3 border-0 md:w-8/12 lg:w-6/12 w-9/12 mx-auto border-gray bg-gradient-to-r from-[#63A4FF] to-[#83EAF1] rounded-md cursor-pointer">
+    <div className="my-3 border-0 md:w-8/12 lg:w-6/12 w-9/12 mx-auto border-gray bg-gradient-to-r from-[#AFF1DA] to-[#F9EA8F] rounded-md cursor-pointer">
       <div
         onClick={() => {
           setOpened(!opened);
