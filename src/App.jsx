@@ -58,6 +58,7 @@ function App() {
               <>
                 <Navbar />
                 <Features />
+                <Footer />
               </>
             }
           />
