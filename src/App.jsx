@@ -15,6 +15,7 @@ import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
 import Features from "./Components/Features/Features";
 import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
+import ChatbotButton from "./Components/ChatBot/ChatBot";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
           <Testimonials />
           <Faq />
           <Footer />
+          <ChatbotButton />
         </>
       )}
     </div>
