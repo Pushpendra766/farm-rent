@@ -15,7 +15,7 @@ import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
 import Features from "./Components/Features/Features";
 import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
-
+import Login from "./Components/Login/Login";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -48,7 +48,9 @@ function App() {
           <Testimonials />
           <Faq />
           <Footer /></>} />
+          
         <Route path="/features" element={<Features />} />
+        
       </Routes>
         </>
       )}
