@@ -29,7 +29,7 @@ const Intro = () => {
             Download App
           </button>
           <button className="pt-2 pb-3 px-4">Visit Website</button>
-        <button  className="pt-2 pb-3 px-4"><a href="/features" >Features</a></button> 
+      
         </div>
        
       </div>

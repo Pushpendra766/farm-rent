@@ -17,6 +17,7 @@ import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
 import ChatbotButton from "./Components/ChatBot/ChatBot";
 
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 

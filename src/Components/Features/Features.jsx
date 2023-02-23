@@ -6,46 +6,43 @@ const Features = () => {
   }, []);
   return (
     <div id="body">
-      <div id="viewport">
-        <button id="hbt">
-          <a href="/">Home</a>
-        </button>
-        <div id="world">
-          <svg id="svg" viewBox="0 0 3000 3000">
-            {" "}
-            <path id="path" d="M4000,0C1000,882.5,1000,882.5,0,0"></path>
-          </svg>
-          <div className="features">
-            <div className="f1 ">
-              <img src="src\assets\f1.png" />
-            </div>
-            <div className="f2 ">
-              <img src="src\assets\f2.png" />
-            </div>
-            <div className="f3 ">
-              <img src="src\assets\f3.png" />
-            </div>
-            <div className="f4 ">
-              <img src="src\assets\f4.png" />
-            </div>
-            <div className="f5">
-              Searching equipment through location is also available
-            </div>
-          </div>
-          <div id="tractor">
-            <div className="body">
-              <div className="exhaust"></div>
-              <div className="ventilation"></div>
-              <div className="window"></div>
-              <div className="wheel"></div>
-              <div className="wheel-inner"></div>
-              <div className="wheel-small"></div>
-              <div className="wheel-small-inner"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="viewport"> 
+    <div id="world"> 
+    
+     <svg id="svg" viewBox="0 0 3000 3000"> <path id="path" d="M4000,0C1000,882.5,1000,882.5,0,0"></path> 
+     </svg> 
+     <div className="features"> 
+      <div className="f1 ">
+        
+        <img src="src\assets\f1.png" />
+      </div> 
+      <div className="f2 ">
+      <img src="src\assets\f2.png" />
+      </div> 
+      <div className="f3 ">
+      <img src="src\assets\f3.png" />
+      </div> 
+      <div className="f4 ">
+      <img src="src\assets\f4.png" />
+      </div> 
+      <div className="f5">
+      Searching equipment through location is also available
+      </div> 
+     </div> 
+     <div id="tractor"> 
+      <div className="body"> 
+       <div className="exhaust"></div> 
+       <div className="ventilation"></div> 
+       <div className="window"></div> 
+       <div className="wheel"></div> 
+       <div className="wheel-inner"></div> 
+       <div className="wheel-small"></div> 
+       <div className="wheel-small-inner"></div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   </div>
   );
 };
 
@@ -148,7 +145,7 @@ function init() {
     } else if (x > 1600 && x < 2100) {
       features[2].style.opacity = 1;
       features[2].style.transform = "translateX(" + 1400 + "px)";
-    } else if (x > 2100 && x < 2700) {
+    } else if (x > 2100 && x < 3000) {
       features[3].style.opacity = 1;
       features[3].style.transform = "translateX(" + 2500 + "px)";
     } else if (x > 2900 && x < 4000) {
