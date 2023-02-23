@@ -44,17 +44,26 @@ const Faq = () => {
         "You can reserve the equipment you need by contacting us through our website or by phone. We recommend that you reserve the equipment in advance to ensure availability, especially during peak periods. We'll confirm the availability and rental details with you once we receive your request.",
     },
   ];
+  const [currentFaq, setCurrentFaq] = useState(null);
   return (
     <div className="mobile:my-8 md:my-0 py-10">
       <p className="font-bold text-3xl text-center pb-8">FAQs</p>
-      {faqs.map((faq) => {
-        return <Component faq={faq} key={faq.question}/>;
+      {faqs.map((faq, index) => {
+        return (
+          <Component
+            faq={faq}
+            key={faq.question}
+            currentFaq={currentFaq}
+            setCurrentFaq={setCurrentFaq}
+            idx={index}
+          />
+        );
       })}
     </div>
   );
 };
 
-const Component = ({ faq }) => {
+const Component = ({ faq, currentFaq, setCurrentFaq, idx }) => {
   const [opened, setOpened] = useState(false);
   const [animationClass, setAnimationClass] = useState("opacity-0");
   useEffect(() => {
@@ -70,7 +79,11 @@ const Component = ({ faq }) => {
     <div className="my-3 border-0 md:w-8/12 lg:w-6/12 w-9/12 mx-auto border-gray bg-gradient-to-r from-[#AFF1DA] to-[#F9EA8F] rounded-md cursor-pointer">
       <div
         onClick={() => {
-          setOpened(!opened);
+          if (currentFaq === idx) {
+            setCurrentFaq(null);
+          } else {
+            setCurrentFaq(idx);
+          }
         }}
         className={`flex items-center justify-between py-2 px-3 font-semibold`}
       >
@@ -78,7 +91,7 @@ const Component = ({ faq }) => {
         {opened ? <AiOutlineUp /> : <AiOutlineDown />}
       </div>
       <Transition
-        show={opened}
+        show={currentFaq === idx}
         enter="transition ease-out duration-500 transform"
         enterFrom="opacity-0 translate-y-2"
         enterTo="opacity-100 translate-y-0"
