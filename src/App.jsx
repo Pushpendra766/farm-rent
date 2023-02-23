@@ -15,7 +15,9 @@ import TractorAnimation from "./Components/TractorAnimation/TractorAnimation";
 import Features from "./Components/Features/Features";
 import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
-import Login from "./Components/Login/Login";
+import ChatbotButton from "./Components/ChatBot/ChatBot";
+
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -29,31 +31,42 @@ function App() {
   const [bgColor, setBgColor] = useState("bg-[#ffffff]");
   return (
     <div className={`App ${bgColor}`}>
-      {isLoading ? (
-        <LoadingAnimation setBgColor={setBgColor} />
-      ) : (
-        <>
-          <Navbar />
-          {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:category" element={<CategoryScreen />} />
-        <Route path="/product/:id" element={<Product />} />
-      </Routes> */}
-          {/* <Itemsbar/> */}
-          <Routes>
-        <Route path="/" element={<>
-        <Intro />
-          <Trending />
-          <HowItWorks />
-          <Testimonials />
-          <Faq />
-          <Footer /></>} />
-          
-        <Route path="/features" element={<Features />} />
-        
-      </Routes>
-        </>
-      )}
+      <>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {isLoading ? (
+                  <LoadingAnimation setBgColor={setBgColor} />
+                ) : (
+                  <>
+                    <Navbar />
+                    <Intro />
+                    <Trending />
+                    <HowItWorks />
+                    <Testimonials />
+                    <Faq />
+                    <Footer />
+                    <ChatbotButton />
+                  </>
+                )}
+              </>
+            }
+          />
+          <Route
+            path="/features"
+            element={
+              <>
+                <Navbar />
+                <Features />
+                <Footer />
+                <ChatbotButton />
+              </>
+            }
+          />
+        </Routes>
+      </>
     </div>
   );
 }
