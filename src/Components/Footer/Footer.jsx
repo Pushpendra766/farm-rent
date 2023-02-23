@@ -8,9 +8,7 @@ import {
 import TractorAnimation from "../TractorAnimation/TractorAnimation";
 const Footer = () => {
   return (
-    <footer
-      className="relative shadow-xl pt-3 pb-6 mb-1 bg-gradient-to-b from-[#63A4FF] to-[#83EAF1]"
-    >
+    <footer className="relative shadow-xl pt-3 pb-6 mb-1 bg-gradient-to-t from-[#3BB78F] to-[#0BAB64]">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
@@ -22,43 +20,43 @@ const Footer = () => {
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
               <button
-                className="bg-lightest-grey text-lightest-grey hover:bg-mid shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="text-lightest-grey hover:bg-mid shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <AiFillTwitterCircle
                   style={{ marginLeft: "-11px", marginTop: "4px" }}
                   size={30}
-                  color="green"
+                  color="black"
                 />
               </button>
               <button
-                className="bg-lightest-grey hover:bg-mid  text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="hover:bg-mid  text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <AiFillInstagram
                   style={{ marginLeft: "-11px", marginTop: "4px" }}
                   size={30}
-                  color="green"
+                  color="black"
                 />
               </button>
               <button
-                className="bg-lightest-grey  hover:bg-mid  text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="hover:bg-mid  text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <AiFillLinkedin
                   style={{ marginLeft: "-11px", marginTop: "4px" }}
                   size={30}
-                  color="green"
+                  color="black"
                 />
               </button>
               <button
-                className="bg-lightest-grey hover:bg-mid  text-green shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="hover:bg-mid  text-green shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <AiFillGithub
                   style={{ marginLeft: "-11px", marginTop: "4px" }}
                   size={30}
-                  color="green"
+                  color="black"
                 />
               </button>
             </div>
@@ -66,13 +64,13 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex  items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-gray text-md font-bold mb-2">
+                <span className="block uppercase cursor-pointer text-md font-bold mb-2">
                   Useful Links
                 </span>
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className=" font-semibold block pb-2 text-sm"
                       href=""
                     >
                       About Us
@@ -80,7 +78,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       Blog
@@ -88,7 +86,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       Github
@@ -96,7 +94,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       Free Products
@@ -105,13 +103,13 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-gray text-md font-bold mb-2">
+                <span className="block cursor-pointer text-md font-bold mb-2">
                   Other Resources
                 </span>
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       MIT License
@@ -119,7 +117,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       Terms &amp; Conditions
@@ -127,7 +125,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-dark hover:text-yellow font-semibold block pb-2 text-sm"
+                      className="font-semibold block pb-2 text-sm"
                       href=""
                     >
                       Privacy Policy
