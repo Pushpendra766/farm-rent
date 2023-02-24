@@ -5,7 +5,9 @@ const Intro = () => {
   return (
     <div className="bg-gradient-to-b from-[#AFF1DA] to-[#F9EA8F] text-[#3E3E3E] pt-10">
       <div className=" lg:pt-20 mx-8 md:mx-20 text-center pt-40 flex flex-col md:gap-5 mobile:gap-2 bg-blue-200 z-40">
+       
         <p className="text-3xl md:text-5xl font-bold mx-auto md:w-5/12 mobile:w-11/12 whitespace-nowrap">
+          
           Helping Farmers,
           <br />
           <Typewriter
@@ -28,7 +30,7 @@ const Intro = () => {
           <button className=" pt-1 md:pt-2 pb-2 md:pb-3 px-4 md:px-6 ">
             Download App
           </button>
-          <button className="pt-2 pb-3 px-4">Visit Website</button>
+          <button className="pt-2 pb-3 px-4">Put Tools on Rent</button>
       
         </div>
        

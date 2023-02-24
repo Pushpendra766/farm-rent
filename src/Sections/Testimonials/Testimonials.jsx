@@ -29,9 +29,9 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="md:my-6 mobile:mb-8 mobile:mt-4 bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] py-10">
+    <div className="md:my-6 mobile:mb-8 mobile:mt-4 bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] py-10 ">
       <p className="text-center text-3xl font-bold pb-8">Testimonials</p>
-      <div className="md:flex h-[60vh] mx-auto mt-16 w-10/12 items-center justify-evenly">
+      <div className="md:flex  mx-auto mt-16 w-10/12 items-center justify-evenly">
         {reviews.map((review) => {
           return <Component review={review} />;
         })}

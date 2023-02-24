@@ -3,8 +3,25 @@ import React,{useEffect} from "react";
 import "./Login.css"
 
 const Login = () =>{
+ let toLogin =()=>{
+    alert("ff")
+        // cv.style.animation="an5m 1s ease-in-out";
+         cv.style.animation="anm2 0.3s ease-in-out";
+         b.style.display="none"; 
+         a.style.display="flex"; 
+         
+       }
+       
+ let toSign= ()=>{
+    alert("ff")
+    // cv.style.animation="an5m 1s ease-in-out";
+     cv.style.animation="anm 0.3s ease-in-out";//"translateX(-700px)"
+     a.style.display="none"; 
+     b.style.display="flex"; 
+     
+   }
     useEffect(()=>{
-        init();
+     init();
     },[])
     return (
         <div id="bbody">
@@ -14,22 +31,22 @@ const Login = () =>{
         <canvas id="card"></canvas>
     </div>
     <div id="c">
-        <form method="post" action="/login">
+        <form>
             <div id="login-box">
-                <h1> Login</h1> <label for="name"> Username:</label>
+                <h1> Login</h1> <label htmlFor="name"> Username:</label>
                 <input name='username' id="name" type="text" placeholder="Username"/> <label id="ps"> Password:</label>
                 <input name="password" id="pass" type="password"/>
                 <p id="fp">forgot password?</p> <button id='logbt' type="submit">Submit</button> Don't have a Account
-                 <a onclick="toSign()" style="color:red"> Click Here! </a>
+                 <a onClick={toSign} style={{color:"red"}}> Click Here! </a>
             </div>
         </form>
-        <form method="post" action="/register">
-            <div id="sign-box" style="display:none">
-                <h1> Sign Up </h1> <label for="name"> Username:</label>
+        <form>
+            <div id="sign-box" style={{display:"none"}}>
+                <h1> Sign Up </h1> <label htmlFor="name"> Username:</label>
                 <input name="username" id="name" type="text" placeholder="Username"/> <label> Password:</label>
                 <input name="password" id="pass" type="password"/> <label> Email:</label>
                 <input name="email" id="mail" type="email"/> <button id="signbt" type="submit">Submit</button> To Log in
-                <a onclick="toLogin()" style="color:red">Click Here! </a>
+                <a onClick={toLogin} style={{color:"red"}}>Click Here! </a>
         </div>
         </form>
     </div>

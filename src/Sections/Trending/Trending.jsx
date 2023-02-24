@@ -17,15 +17,26 @@ import Card from "./Card";
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Trending = () => {
+  const [res,setRes]=useState(0)
+  window.onresize=()=>{
+    setRes(!res);
+  }
   return (
     <div className="bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] py-10">
       <p className="text-center text-3xl font-bold">Trending</p>
       <div className="mx-auto h-auto scroll-smooth hover:scroll-auto py-10 my-10 flex flex-nowrap items-center  justify-evenly overflow-x-auto">
         <Swiper
           effect={"coverflow"}
+          breakpoints={{
+            200: { slidesPerView: 1, spaceBetween: 100 },
+            708: { slidesPerView: 2, spaceBetween: 10 },
+            908: { slidesPerView: 3, spaceBetween: 10 },
+            1024: { slidesPerView: 3, spaceBetween: 50 },
+          }}
+          
           grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={3}
+          
+         
           loop={true}
           slideToClickedSlide={true}
           coverflowEffect={{
@@ -34,7 +45,7 @@ const Trending = () => {
             depth: 100,
             modifier: 1,
             slideShadows: false,
-          }}
+           }}
           pagination={true}
           className="mySwiper"
         >

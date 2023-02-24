@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
 import ChatbotButton from "./Components/ChatBot/ChatBot";
 
-
+/*import Login from "./Components/Login/Login";*/
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -41,7 +41,7 @@ function App() {
                   <LoadingAnimation setBgColor={setBgColor} />
                 ) : (
                   <>
-                    <Navbar />
+                    <Navbar text="Features" hr="/features" />
                     <Intro />
                     <Trending />
                     <HowItWorks />
@@ -58,13 +58,23 @@ function App() {
             path="/features"
             element={
               <>
-                <Navbar />
+                <Navbar text="Home" hr="/"/>
                 <Features />
                 <Footer />
                 <ChatbotButton />
               </>
             }
           />
+          {/* <Route
+            path="/Login"
+            element={
+              <>
+                <Navbar text="Home" hr="/"/>
+                *<Login/> 
+                <ChatbotButton />
+              </>
+            }
+          />*/}
         </Routes>
       </>
     </div>
