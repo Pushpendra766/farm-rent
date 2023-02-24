@@ -35,8 +35,8 @@ const Navbar = () => {
             }}
           >
             {home ? (
-              <a href="/features" onClick={() => history("/features")}>
-                Features
+              <a href="/features" onClick={() => history("/features")} className="whitespace-nowrap">
+                Sign Up
               </a>
             ) : (
               <a href="/" onClick={() => history("/")}>
