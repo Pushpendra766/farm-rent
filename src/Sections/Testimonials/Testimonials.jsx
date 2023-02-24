@@ -29,9 +29,11 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="md:my-6 mobile:mb-8 mobile:mt-4 bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] py-10 ">
-      <p className="text-center text-3xl font-bold pb-8">Testimonials</p>
-      <div className="md:flex  mx-auto mt-16 w-10/12 items-center justify-evenly">
+    <div className="md:my-4 bg-gradient-to-r from-[#c8f7c6] via-[#eef3dc] to-[#c8f7c6] md:py-10 mobile:py-4">
+      <p className="text-center text-3xl font-bold md:pb-8 mobile:pb-4">
+        Testimonials
+      </p>
+      <div className="md:flex mx-auto md:mt-14 mobile:my-0 w-10/12 items-center justify-evenly">
         {reviews.map((review) => {
           return <Component review={review} />;
         })}
@@ -42,17 +44,10 @@ const Testimonials = () => {
 
 const Component = ({ review }) => {
   const boxRef = React.useRef(null);
-  // useEffect(() => {
-  //   gsap
-  //     .timeline({ repeat: -1, defaults: { duration: 2 } })
-  //     .from(boxRef.current, { x: -25 })
-  //     .to(boxRef.current, { x: 25 })
-  //     .to(boxRef.current, { x: -25 });
-  // }, []);
   return (
     <div
       ref={boxRef}
-      className="mx-4 rounded-xl px-3 py-4"
+      className="mx-4 rounded-xl px-3 py-2 mobile:my-24 md:my-0"
       style={{ backgroundColor: "#ffffff" }}
     >
       <img

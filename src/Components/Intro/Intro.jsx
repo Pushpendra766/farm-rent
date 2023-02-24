@@ -30,7 +30,7 @@ const Intro = () => {
           <button className=" pt-1 md:pt-2 pb-2 md:pb-3 px-4 md:px-6 ">
             Download App
           </button>
-          <button className="pt-2 pb-3 px-4">Put Tools on Rent</button>
+          <button className="pt-2 pb-3 px-4">Features</button>
       
         </div>
        
