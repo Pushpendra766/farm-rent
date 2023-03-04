@@ -1,6 +1,6 @@
 # What is Farm Rent ?
 
-This is a web application for a farming tools rental service built using ReactJS and Tailwind CSS.
+Farm Rent is a web application for a farming tools rental service built using ReactJS and Tailwind CSS.
 
 You can see the live preview [here](https://farmrent.netlify.app/)
 
