@@ -28,22 +28,7 @@ const Navbar = () => {
         <Language />
         <span className="flex flex-row gap-4 hidden md:flex">
           <button className="">Login</button>
-          <button
-            className="pt-1 pb-2 px-4"
-            onClick={() => {
-              setHome(!home);
-            }}
-          >
-            {home ? (
-              <a href="/features" onClick={() => history("/features")} className="whitespace-nowrap">
-                Sign Up
-              </a>
-            ) : (
-              <a href="/" onClick={() => history("/")}>
-                Home
-              </a>
-            )}
-          </button>
+          <button className="">Signup</button>
         </span>
       </div>
       <div className="pb-2 mx-4">
