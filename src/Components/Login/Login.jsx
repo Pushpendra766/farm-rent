@@ -1,95 +1,31 @@
+import React from "react";
 
-import React,{useEffect} from "react";
-import "./Login.css"
-
-const Login = () =>{
-    useEffect(()=>{
-        init();
-    },[])
-    return (
-        <div id="bbody">
-    <div id="box">
-    </div>
-    <div id="glass">
-        <canvas id="card"></canvas>
-    </div>
-    <div id="c">
-        <form method="post" action="/login">
-            <div id="login-box">
-                <h1> Login</h1> <label for="name"> Username:</label>
-                <input name='username' id="name" type="text" placeholder="Username"/> <label id="ps"> Password:</label>
-                <input name="password" id="pass" type="password"/>
-                <p id="fp">forgot password?</p> <button id='logbt' type="submit">Submit</button> Don't have a Account
-                 <a onclick="toSign()" style="color:red"> Click Here! </a>
-            </div>
-        </form>
-        <form method="post" action="/register">
-            <div id="sign-box" style="display:none">
-                <h1> Sign Up </h1> <label for="name"> Username:</label>
-                <input name="username" id="name" type="text" placeholder="Username"/> <label> Password:</label>
-                <input name="password" id="pass" type="password"/> <label> Email:</label>
-                <input name="email" id="mail" type="email"/> <button id="signbt" type="submit">Submit</button> To Log in
-                <a onclick="toLogin()" style="color:red">Click Here! </a>
+const Login = () => {
+  return (
+    <div className="py-40 bg-[#feffeb]">
+      <div
+        className="py-6 px-10 xl:w-4/12 lg:w-6/12 md:w-7/12 w-10/12 mx-auto border-2 border-[#1a4d2d] rounded-md gap-4 flex flex-col bg-gradient-to-b from-[#AFF1DA] to-[#F9EA8F]"
+      >
+        <h2 className="text-center text-xl font-semibold">Login</h2>
+        <div>
+          <label>Email : </label>
+          <input
+            type="email"
+            className="border rounded-md w-full px-2 py-1 bg-[#feffeb] border-[#1a4d2d]"
+          ></input>
         </div>
-        </form>
+
+        <div>
+          <label>Password : </label>
+          <input
+            type="password"
+            className="border rounded-md w-full px-2 py-1 bg-[#feffeb] border-[#1a4d2d]"
+          ></input>
+        </div>
+        <button className="hover:scale-100 py-2">Login</button>
+      </div>
     </div>
-    
-    </div>
-    );
-   };
- 
+  );
+};
 
-   function init(){
-    let a=document.getElementById("login-box") 
-
-let b=document.getElementById("sign-box") 
-let cv=document.getElementById("card") 
-let ctx=cv.getContext("2d");
-let qcv=document.querySelector("#card") 
-
-function toLogin (){
- // cv.style.animation="an5m 1s ease-in-out";
-  cv.style.animation="anm2 0.3s ease-in-out";
-  b.style.display="none"; 
-  a.style.display="flex"; 
-  
-}
-window.onload=
-  console.log('shy');
-
-
-
-let cstyle = getComputedStyle(qcv)
-
-function toSign (){
- // cv.style.animation="an5m 1s ease-in-out";
-  cv.style.animation="anm 0.3s ease-in-out";//"translateX(-700px)"
-  a.style.display="none"; 
-  b.style.display="flex"; 
-  
-}
-
-function draw(){
- //ctx.beginPath(); 
- ctx.moveTo(300,0); 
- let y=0;
- for(let i=0;i<155;i++){
-   if(i<75) y+=1; 
-   else if(i==75)y=y
-   else y-=1;
-    
- ctx.lineTo(300-3*y+y*y/100,i)
- ctx.lineWidth=0.1;
- ctx.stroke()
- ctx.fillStyle="#0fffff"
- ctx.globalAlpha=0.1;
- ctx.fill()
- 
- }
- ctx.closePath();
- 
-}
-draw()
-   }
-   
-   export default Login;
+export default Login;

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 button {
-  @apply bg-gradient-to-r from-[#FF512F] to-[#F09819] px-4 rounded-full pb-1 font-semibold hover:scale-105;
+  @apply bg-gradient-to-r from-[#FF512F] to-[#F09819] px-4 rounded-full pb-1 font-semibold hover:scale-105 text-[#ffffff];
 }
 
 /* :root {
