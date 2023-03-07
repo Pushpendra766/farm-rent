@@ -16,7 +16,8 @@ import Features from "./Components/Features/Features";
 import { useEffect, useState } from "react";
 import LoadingAnimation from "./Components/LoadingAnimation/LoadingAnimation";
 import ChatbotButton from "./Components/ChatBot/ChatBot";
-
+import Login from "./Components/Login/Login";
+import Signup from "./Components/Signup/Signup";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -62,6 +63,26 @@ function App() {
                 <Features />
                 <Footer />
                 <ChatbotButton />
+              </>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <>
+                <Navbar />
+                <Login />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <>
+                <Navbar />
+                <Signup />
+                <Footer />
               </>
             }
           />

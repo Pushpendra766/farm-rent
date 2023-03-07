@@ -27,8 +27,8 @@ const Navbar = () => {
         <SearchBar additionalClass="hidden md:flex" />
         <Language />
         <span className="flex flex-row gap-4 hidden md:flex">
-          <button className="">Login</button>
-          <button className="">Signup</button>
+          <button onClick={() => history("/login")}>Login</button>
+          <button onClick={() => history("/signup")}>Signup</button>
         </span>
       </div>
       <div className="pb-2 mx-4">
